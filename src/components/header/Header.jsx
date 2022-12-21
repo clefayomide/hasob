@@ -5,7 +5,7 @@ import MobileMenu from "../mobile-menu/MobileMenu";
 
 const Header = () => {
   return (
-    <header className="">
+    <header className="w-full">
       <nav className="flex justify-between items-center">
         <Logo />
         <DesktopMenu />

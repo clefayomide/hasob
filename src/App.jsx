@@ -2,9 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import { routes } from "./routes/routes";
 import { v4 as uuidv4 } from "uuid";
 import Protected from "./components/route/Protected";
+import useStore from "./hooks/useStore";
 
 function App() {
-  const isAuthenticated = true;
+  const { user } = useStore();
+  const { isAuth } = user;
   return (
     <Routes>
       {routes.map(({ path, component, layout, protected: isProtected }) => (
@@ -16,7 +18,7 @@ function App() {
               component={component}
               layout={layout}
               protected={isProtected}
-              auth={isAuthenticated}
+              auth={isAuth}
             />
           }
         />

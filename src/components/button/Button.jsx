@@ -11,8 +11,8 @@ const Button = ({ type, text, rounded, classNames, icon, width }) => {
   return (
     <button
       className={`flex gap-2 justify-center items-center ${width} h-12 ${
-        btnTypes.includes(type) ? style[type]() : classNames
-      } ${rounded ? "rounded-sm" : ""}`}
+        btnTypes.includes(type) && style[type]()
+      } ${classNames} ${rounded ? "rounded-sm" : ""}`}
     >
       <div>{text}</div>
       {icon && icon}

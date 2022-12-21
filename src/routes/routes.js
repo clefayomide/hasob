@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import SignUp from "../pages/SignUp";
 import Cart from "../pages/Cart";
 import Login from "../pages/Login";
+import Bond from "../pages/Bond";
 
 export const routes = [
   {
@@ -27,6 +28,14 @@ export const routes = [
     path: "/login",
     layout: Member,
     component: Login,
+    protected: false,
+  },
+
+  {
+    title: "Bond Offer",
+    path: "/bond-offer",
+    layout: Member,
+    component: Bond,
     protected: false,
   },
 

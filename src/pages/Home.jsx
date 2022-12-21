@@ -11,15 +11,17 @@ const Home = () => {
         <div className="w-10 h-4 bg-stone-500 -ml-5"></div>
         <div className="w-10 h-4 bg-[#b9f0ac] -mr-5"></div>
       </div>
-      <section className="flex justify-center items-center flex-col-reverse lg:flex-row gap-10 lg:h-full">
+      <section className="flex flex-col-reverse lg:flex-row gap-10 lg:h-full">
         <div className="lg:mt-10 w-full lg:w-[35%]">
           <Heading
             text={"Subscribe to FGN Saving Bond"}
-            classNames={"text-[40px] leading-[40px]"}
+            size={"md"}
+            classNames={"leading-[40px]"}
           />
           <Paragraph
+          size={"xl"}
             text={"Loan and get paid with interest"}
-            classNames={"text-[22px]"}
+            classNames={""}
           />
           <div className="mt-12 flex gap-5 items-center">
             <Button
