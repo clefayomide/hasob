@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const Member = ({ children }) => {
   const location = useLocation();
-  const scrollable_routes = ["/sign-up", "/bond-offer"];
+  const scrollable_routes = ["/sign-up", "/bond-offer", "/cart"];
   return (
     <div
       className={`pr-5 pl-5 pb-5 pt-3 relative font-Roboto ${

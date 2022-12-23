@@ -2,7 +2,7 @@ import React from "react";
 
 const Checkbox = ({ value, onValuechange }) => {
   return (
-    <div className="flex gap-5 items-center w-full md:w-[450px] m-auto mt-5">
+    <div className="flex gap-5 items-center w-fit m-auto mt-5">
       <div className="relative">
         <input
           type={"checkbox"}
@@ -31,10 +31,7 @@ const Checkbox = ({ value, onValuechange }) => {
           )}
         </div>
       </div>
-      <p className="-mt-1">
-        By continuing, you agree to the{" "}
-        <span className="text-green-500">Terms and Conditions</span>
-      </p>
+      
     </div>
   );
 };

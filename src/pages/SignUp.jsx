@@ -15,7 +15,7 @@ const SignUp = () => {
   const [term_condition, set_terms_condition] = useState(false);
 
   return (
-    <main className="h-full bg-[url('/src/assets/coat_left.png')] bg-no-repeat bg-[left_center]">
+    <main className="h-full md:mt-5 lg:mt-0 bg-[url('/src/assets/coat_left.png')] bg-no-repeat bg-[left_center]">
       <div className="bg-[url('/src/assets/coat_right.png')] bg-no-repeat bg-[right_center]">
         <Form header={"Sign Up"} paragraph={"Stop spending, Start investing"}>
           <Input
@@ -61,10 +61,18 @@ const SignUp = () => {
             value={phone_number}
             onValuechange={set_phone_number}
           />
-          <Checkbox
-            value={term_condition}
-            onValuechange={set_terms_condition}
-          />
+          <section className="flex gap-2 justify-start items-center w-full md:w-[450px] m-auto">
+            <div className="w-[10%]">
+              <Checkbox
+                value={term_condition}
+                onValuechange={set_terms_condition}
+              />
+            </div>
+            <p className="mt-2">
+              By continuing, you agree to the{" "}
+              <span className="text-green-500">Terms and Conditions</span>
+            </p>
+          </section>
           <Button
             type={"primary"}
             text="Sign up"
