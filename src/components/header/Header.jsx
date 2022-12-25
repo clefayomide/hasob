@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="w-full">
       <nav className="flex justify-between items-center">
-        <Logo />
+        
         <DesktopMenu />
         <MobileMenu />
       </nav>
