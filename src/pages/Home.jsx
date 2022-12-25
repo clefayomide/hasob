@@ -19,7 +19,7 @@ const Home = () => {
             classNames={"leading-[40px]"}
           />
           <Paragraph
-          size={"xl"}
+            size={"xl"}
             text={"Loan and get paid with interest"}
             classNames={""}
           />
