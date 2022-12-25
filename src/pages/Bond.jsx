@@ -29,12 +29,12 @@ const Bond = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap gap-5 lg:gap-0 justify-between mt-5 md:mt-10">
+    <main className="2xl:w-[1500px] 2xl:m-auto flex flex-wrap gap-5 lg:gap-0 justify-between mt-5 md:mt-10">
       <Card data={card_data} />
       <Card data={card_data} />
       <Card data={card_data} />
       <Card data={card_data} />
-    </div>
+    </main>
   );
 };
 

@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
   return (
-    <main className="h-full">
+    <main className="h-full 2xl:w-[1500px] 2xl:m-auto">
       <div className="flex justify-between mt-3">
         <div className="w-10 h-4 bg-stone-500 -ml-5"></div>
         <div className="w-10 h-4 bg-[#b9f0ac] -mr-5"></div>

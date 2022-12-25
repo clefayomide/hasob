@@ -4,7 +4,7 @@ import { Heading, Paragraph } from "../components/typography/Typography";
 
 const Cart = () => {
   return (
-    <main className="mt-5">
+    <main className="mt-5 2xl:w-[1500px] 2xl:m-auto">
       <section className="">
         <section className="w-full flex flex-col lg:flex-row lg:justify-between">
           <div className="w-full lg:w-[56%] flex flex-col gap-5">
